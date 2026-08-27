@@ -28,7 +28,7 @@ jobs:
 
       - name: Generate Android platform files
         working-directory: mobile/flutter
-        run: flutter create . --platforms=android
+        run: flutter create . --platforms=android --project-name signal_master
 
       - name: Build APK
         working-directory: mobile/flutter

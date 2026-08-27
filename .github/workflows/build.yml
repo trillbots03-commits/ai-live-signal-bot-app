@@ -26,6 +26,10 @@ jobs:
         working-directory: mobile/flutter
         run: flutter pub get
 
+      - name: Generate Android platform files
+        working-directory: mobile/flutter
+        run: flutter create . --platforms=android
+
       - name: Build APK
         working-directory: mobile/flutter
         run: flutter build apk --release
